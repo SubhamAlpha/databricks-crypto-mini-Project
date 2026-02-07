@@ -5,7 +5,7 @@
 This project demonstrates a production-grade End-to-End (E2E) Data Pipeline built on Databricks Community Edition. It ingests real-time cryptocurrency market data from the CoinGecko API and processes it through a Medallion Architecture (Bronze → Silver → Gold) to provide actionable investment insights.
 
 The Challenge
-As an engineer with 12 years of experience, I designed this project to showcase adaptability. When faced with DBFS root access restrictions in the Databricks free tier, I implemented a robust In-Memory Spark Ingestion strategy to bypass filesystem limitations without compromising data integrity.
+As an data engineer with 6 years of experience, I designed this project to showcase adaptability. When faced with DBFS root access restrictions in the Databricks free tier, I implemented a robust In-Memory Spark Ingestion strategy to bypass filesystem limitations without compromising data integrity.
 
 🏗️ Architecture & Data Flow
 The pipeline follows the Lakehouse Medallion Architecture, ensuring data quality at every stage.
