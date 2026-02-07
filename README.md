@@ -10,34 +10,34 @@ As an engineer with 12 years of experience, I designed this project to showcase 
 🏗️ Architecture & Data Flow
 The pipeline follows the Lakehouse Medallion Architecture, ensuring data quality at every stage.
 
-1. Bronze Layer (Raw Ingestion)
-Source: CoinGecko REST API.
-
-Process: Data is fetched via Python requests, converted into a Spark DataFrame in-memory, and persisted as a managed Delta Table.
-
-Goal: Maintain an immutable history of raw API responses with ingestion timestamps.
-
-2. Silver Layer (Cleaned & Augmented)
-Process: * Schema enforcement and type casting (e.g., converting prices to Double).
-
-Filtering out records with missing essential data.
-
-Feature engineering: Added a is_high_volume flag for market analysis.
-
-Goal: Provide a "Single Source of Truth" for downstream consumption.
-
-3. Gold Layer (Business Ready)
-Process: Aggregations focused on market distribution and average price volatility.
-
-Goal: Power high-level dashboards and executive reports.
+    1. Bronze Layer (Raw Ingestion)
+    Source: CoinGecko REST API.
+    
+    Process: Data is fetched via Python requests, converted into a Spark DataFrame in-memory, and persisted as a managed Delta Table.
+    
+    Goal: Maintain an immutable history of raw API responses with ingestion timestamps.
+    
+    2. Silver Layer (Cleaned & Augmented)
+    Process: * Schema enforcement and type casting (e.g., converting prices to Double).
+    
+    Filtering out records with missing essential data.
+    
+    Feature engineering: Added a is_high_volume flag for market analysis.
+    
+    Goal: Provide a "Single Source of Truth" for downstream consumption.
+    
+    3. Gold Layer (Business Ready)
+    Process: Aggregations focused on market distribution and average price volatility.
+    
+    Goal: Power high-level dashboards and executive reports.
 
 🛠️ Tech Stack
-Language: PySpark, Python, SQL
-
-Platform: Databricks (Community Edition)
-
-Storage: Delta Lake
-
-Orchestration: Databricks Notebook Workflows
-
-Version Control: Git Folders (GitHub Integration)
+    Language: PySpark, Python, SQL
+    
+    Platform: Databricks (Community Edition)
+    
+    Storage: Delta Lake
+    
+    Orchestration: Databricks Notebook Workflows
+    
+    Version Control: Git Folders (GitHub Integration)
