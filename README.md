@@ -1,5 +1,7 @@
 # databricks-crypto-mini-Project
 
+#Financial_Data
+
 🚀 E2E Crypto Data Pipeline: Medallion Architecture on Databricks
 📌 Project Overview
 This project demonstrates a production-grade End-to-End (E2E) Data Pipeline built on Databricks Community Edition. It ingests real-time cryptocurrency market data from the CoinGecko API and processes it through a Medallion Architecture (Bronze → Silver → Gold) to provide actionable investment insights.
